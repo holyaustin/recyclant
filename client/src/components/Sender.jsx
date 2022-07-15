@@ -28,7 +28,7 @@ export default function Sender() {
 
   async function loadWaste() {
     /* create a generic provider and query for Wastes */
-    const provider = new ethers.providers.JsonRpcProvider("");
+    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
     const contract = new ethers.Contract(wastemarketplaceAddress, Waste.abi, provider);
     const data = await contract.fetchMarketItems();
     console.log("Waste data fetched from contract", data);
@@ -82,7 +82,7 @@ export default function Sender() {
   if (loadingState === "loaded" && !nfts.length) {
     return (
       <div>
-        <h1 className="px-20 py-10 text-3xl">No book in this book section</h1>
+        <h1 className="px-20 py-10 text-3xl">No Entries yet</h1>
       </div>
     );
   }
@@ -98,10 +98,10 @@ export default function Sender() {
                 title="Waste"
                 frameBorder="0"
                 scrolling="no"
-                height="300px"
+                height="400px"
                 width="100%"
                 src={`${nft.image}#toolbar=0`}
-                className="py-3 object-fill"
+                className="py-3 object-fill h-500"
               />
               <div className="p-1">
                 <p style={{ height: "34px" }} className="text-xl text-green-400 font-semibold">Category: {nft.name}</p>

@@ -12,8 +12,7 @@ Backend: Solidity, Node.js
 
 Project initiated and created for Hackathon: Sustainable Blockchain Hackathon 
 
-Live Dapp - https://www.recyclant.vercel.app
-
+Live Dapp - https://recyclant.vercel.app/
 
 Deployed to Polygon Mumbai: 0x56805DB034dc3675ae363ef7bD6FDA7714b6f19B
 
