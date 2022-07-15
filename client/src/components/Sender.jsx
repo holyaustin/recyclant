@@ -52,6 +52,7 @@ export default function Sender() {
         name: meta.data.name,
         description: meta.data.description,
         country: meta.data.properties.country,
+        collectionPoint: meta.data.properties.collectionPoint,
         weight: meta.data.properties.weight,
       };
       console.log("item returned is ", item);
@@ -105,9 +106,12 @@ export default function Sender() {
               />
               <div className="p-1">
                 <p style={{ height: "34px" }} className="text-xl text-green-400 font-semibold">Category: {nft.name}</p>
-                <p style={{ height: "34px" }} className="text-xl font-semibold">Country : {nft.country}</p>
-                <div style={{ height: "70px", overflow: "hidden" }}>
+                <div style={{ height: "40px", overflow: "hidden" }}>
                   <p className="text-gray-700">Description: {nft.description}</p>
+                </div>
+                <p style={{ height: "34px" }} className="text-xl font-semibold">Country : {nft.country}</p>
+                <div style={{ height: "40px", overflow: "hidden" }}>
+                  <p className="text-gray-700">Collection Point: {nft.collectionPoint}</p>
                 </div>
                 <p className="text-xl font-bold text-white"> Weight(Kg): {nft.weight}</p>
                 <p className="text-xl font-bold text-black">Price : {nft.price} MATIC</p>

@@ -79,7 +79,7 @@ const Welcome = () => {
             Waste Recycling & Sustainability <br /> Help our Environment <br /> and get rewarded
           </p><br />
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
-            Connect your wallet and submit details of your enviromental waste...
+            Connect your wallet, submit details of your <br /> enviromental waste, recyclers go to the <br />  marketplaceplace  and recycle  waste close to their location...
           </p><br />
           {/** {!currentAccount && ( )} */}
           <button
