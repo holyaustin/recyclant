@@ -18,8 +18,7 @@ export default defineConfig({
         main: resolve(root, "index.html"),
         about: resolve(root, "about", "index.html"),
         create: resolve(root, "create", "index.html"),
-        investments: resolve(root, "investments", "index.html"),
-        send: resolve(root, "send", "index.html"),
+        explore: resolve(root, "explore", "index.html"),
       }
     }
   }
