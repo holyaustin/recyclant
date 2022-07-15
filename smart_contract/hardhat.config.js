@@ -9,7 +9,7 @@ module.exports = {
     },
    
     mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/odpZQIbE3xtAii8qMNePX-0M6fyB8G0V", 
+      url: [process.env.ALCHEMY_RPC], 
       accounts: [process.env.PRIVATE_KEY],
     },
 
